@@ -5,20 +5,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>VAMS - DVR Portal</title>
-  <link rel="icon" href="https://vams-git.github.io/webapp/assets/image/veolia_logo_rbg_64_no_padding.png" />
-  <link rel="stylesheet" href="https://vams-git.github.io/webapp/assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://vams-git.github.io/webapp/assets/css/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="https://vams-git.github.io/webapp/assets/css/dvr_login.css" />
+  <link rel="icon" href="/assets/images/veolia_logo_rbg_64_no_padding.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/assets/css/dvr_login.css" />
 </head>
 
 <body class="d-flex align-items-center w-100 vh-100 bg-body-tertiary">
-  <main class="container login-form">
+  <main id="login_main" class="container d-none login-form">
     <form id="login_form" class="vstack gap-4">
-      <img class="mx-auto mb-5 login-logo"
-        src="https://vams-git.github.io/webapp/assets/image/veolia_logo_rbg_128_no_padding.png" />
+      <img class="mx-auto mb-5 login-logo" src="/assets/images/veolia_logo_rbg_128_no_padding.png" />
       <div class="lead w-100 text-center">
-        <p class="fs-3 m-0">Veolia Asset Management System</p>
-        <p>DVR Portal</p>
+        <p class="fs-5 m-0">Veolia Asset Management System</p>
+        <p class="fs-3 m-0">DVR Portal</p>
       </div>
       <input type="email" class="form-control mb-3" id="login_input_user_id" placeholder="User ID" />
       <div class="input-group">
@@ -31,9 +31,11 @@
       <a href="#" class="link-primary mx-auto">Forget Password</a>
     </form>
   </main>
-  <script src="https://vams-git.github.io/webapp/assets/js/bootstrap.bundle.min.js"></script>
-  <script src="https://vams-git.github.io/webapp/assets/js/common.js"></script>
-  <script src="https://vams-git.github.io/webapp/assets/js/dvr_login.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script src="/assets/js/common.js"></script>
+  <script src="/assets/js/dvr_login.js"></script>
 </body>
 
 </html>
