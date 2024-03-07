@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>VAMS - DVR Portal</title>
-  <link rel="icon" href="../webapp/assets/images/veolia_logo_rbg_64_no_padding.png" />
+  <link rel="icon" href="../webapp/assets/image/veolia_logo_rbg_64_no_padding.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -15,14 +15,16 @@
 <body class="d-flex align-items-center w-100 vh-100 bg-body-tertiary">
   <main id="login_main" class="container d-none login-form">
     <form id="login_form" class="vstack gap-4">
-      <img class="mx-auto mb-5 login-logo" src="../webapp/assets/images/veolia_logo_rbg_128_no_padding.png" />
+      <img class="mx-auto mb-5 login-logo" src="../webapp/assets/image/veolia_logo_rbg_128_no_padding.png" />
       <div class="lead w-100 text-center">
         <p class="fs-5 m-0">Veolia Asset Management System</p>
         <p class="fs-3 m-0">DVR Portal</p>
       </div>
-      <input type="email" class="form-control mb-3" name="user" v-model="user" id="login_input_user_id" placeholder="User ID" />
+      <input type="email" class="form-control mb-3" name="user" v-model="user" id="login_input_user_id"
+        placeholder="User ID" />
       <div class="input-group">
-        <input type="password" class="form-control" name="password" v-model="password" id="login_input_password" placeholder="Password" />
+        <input type="password" class="form-control" name="password" v-model="password" id="login_input_password"
+          placeholder="Password" />
         <button class="btn btn-outline-secondary" type="button" id="login_button_toggle_password">
           <i class="bi bi-eye"></i>
         </button>
